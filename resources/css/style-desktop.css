@@ -1,0 +1,9 @@
+@media only screen and (min-width: 768px) {
+    #nav__mobile {
+        display: none;
+    }
+
+    #nav__desktop {
+        display: block;
+    }
+}

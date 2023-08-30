@@ -1,0 +1,134 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', sans-serif;
+    color: #fefefe;
+}
+
+:root {
+    --color-black: #1d1d1d; 
+}
+
+li, a {
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    background-color: var(--color-black);
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+#nav__desktop {
+    display: none;
+}
+
+
+/* ---  NAV  --- */
+
+
+#nav__mobile #logo,
+#nav__desktop #logo {
+    font-weight: 400;
+}
+
+#nav__mobile,
+#nav__desktop {
+    width: 100%;
+    padding: 20px;
+}
+
+
+/* ---  NAV_MOBILE  --- */
+
+
+#nav__mobile__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* ---  NAV_MOBILE - BUTTON --- */
+
+#btn__menu {
+    width: 20px;
+    height: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 6px;
+}
+
+#btn__menu .line {
+    width: 100%;
+    height: 1px;
+    background-color: #fff;
+    border-radius: 100px;
+    transform-origin: center;
+    transition: transform .3s;
+}
+
+#menu__options {
+    height: 0px;
+    overflow: hidden;
+}
+
+.menu__option {
+    display: inline-block;
+    width: 100%;
+    border-bottom: 1px solid #fefefe50;
+    padding: 10px;
+    font-weight: 200;
+}
+
+.menu__option:hover {
+    background-color: #fefefe10;
+}
+
+
+
+/* ---  CONTENT  --- */
+
+
+#content {
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 50px;
+}
+
+#title {
+    font-size: 25px;
+    color: #ff6200;
+}
+
+
+/* ---  CONTENT - CARDS --- */
+
+.card {
+    width: 90%;
+    margin: 50px;
+    background-color: #fefefe10;
+    padding: 20px;
+    border-radius: 15px;
+}
+
+.card__subtitle {
+    text-align: center;
+    margin: 10px;
+    letter-spacing: 2px;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.card__description {
+    line-height: 30px;
+    letter-spacing: 2px;
+    font-weight: 300;
+}
